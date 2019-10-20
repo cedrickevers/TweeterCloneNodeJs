@@ -5,6 +5,7 @@ const request = require('request');
 const async = require('async');
 const expressHbs = require ('express-handlebars');
 
+const config = require("./config/secret")
 
  
 const app = express();

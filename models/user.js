@@ -36,6 +36,6 @@ UserSchema.methods.gravatar = function(size) {
 }
  
 UserSchema.methods.comparePassword = function(password){
-    return bcrypt.compareSync(pzssword, this.password)
+    return bcrypt.compareSync(password, this.password)
 }
         module.exports = mongoose.model("User", UserSchema)
